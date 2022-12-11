@@ -7,10 +7,11 @@
     tools:context=".MainActivity">
 
  <androidx.fragment.app.FragmentContainerView
-     android:id="@+id/container"
+     android:id="@+id/nav_host_fragment"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:name="com.mifen.zadanie2.FirstFragment"
-     tools:ignore="MissingConstraints" />
-    
-</androidx.constraintlayout.widget.ConstraintLayout>
+     android:name="androidx.navigation.fragment.NavHostFragment"
+     app:defaultNavHost= "true"
+     app:navGraph= "@navigation/main_navigation"/>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
